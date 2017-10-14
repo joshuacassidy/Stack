@@ -1,13 +1,26 @@
 public class Node<T extends Comparable<T>> {
-    public T data;
-    public Node<T> nextNode;
+    private T data;
+    private Node<T> nextNode;
 
     public Node(T data) {
         this.data = data;
     }
 
+    public void setNextNode(Node<T> nextNode) {
+        this.nextNode = nextNode;
+    }
+
     @Override
     public String toString() {
         return this.data.toString();
+    }
+    
+
+    public T getData() {
+        return data;
+    }
+
+    public Node<T> getNextNode() {
+        return nextNode;
     }
 }

@@ -8,7 +8,7 @@ public class Main {
         stack.push(1000);
         stack.push(10000);
 
-        System.out.println(stack.getCount());
+        System.out.println(stack.getSize());
 
         System.out.println(stack.pop());
         System.out.println(stack.pop());
