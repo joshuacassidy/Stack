@@ -17,12 +17,6 @@ public class StackTest {
 
 
     @Test
-    public void OneEqualsOne() throws Exception {
-        assertEquals(1,1);
-
-    }
-
-    @Test
     public void pop() throws Exception {
         assertEquals(3, (int) stack.pop());
     }
@@ -64,14 +58,4 @@ public class StackTest {
 
     }
 
-    @Test (expected = NullPointerException.class)
-    public void popWhenStackIsEmpty() throws Exception {
-        new Stack<>().pop();
-    }
-
-    @Test (expected = NullPointerException.class)
-    public void peekWhenStackIsEmpty() throws Exception {
-        new Stack<>().peek();
-
-    }
 }
